@@ -8,6 +8,14 @@ define e = Character("Eileen")
 
 # The game starts here.
 
+init python:
+    #import On-the-hill/oth_core
+    #backend = oth_core.GameBackend()
+    import os
+    sys.path.append(sys.argv[1] + "/game/On-the-hill/")
+    import oth_core
+    backend = oth_core.GameBackend()
+
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
