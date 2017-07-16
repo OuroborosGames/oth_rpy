@@ -11,8 +11,9 @@ define e = Character("Eileen")
 init python:
     #import On-the-hill/oth_core
     #backend = oth_core.GameBackend()
-    import os
+    import sys
     sys.path.append(sys.argv[1] + "/game/On-the-hill/")
+    sys.path.append(sys.argv[1] + "/compat/")
     import oth_core
     backend = oth_core.GameBackend()
 
