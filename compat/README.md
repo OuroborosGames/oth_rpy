@@ -1,0 +1,1 @@
+All the shims/compatibility fixes/missing libraries (e.g. pkgutil which was not present in Ren'Py) go here.
