@@ -10,7 +10,7 @@ git clone --recursive https://github.com/OuroborosGames/oth_rpy
 ```
 To pull all changes from downstream, use this:
 ```bash
-git pul
+git pull
 git submodule update --recursive --remote
 ```
 To push changes, try:
