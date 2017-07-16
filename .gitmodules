@@ -1,0 +1,4 @@
+[submodule "game/On-the-hill"]
+	path = game/On-the-hill
+	url = https://github.com/OuroborosGames/On-the-hill
+	branch = master
