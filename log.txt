@@ -1,17 +1,17 @@
-Sun Jul 16 14:32:29 2017
+Wed Nov 29 22:14:26 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
 
-Bootstrap to the start of init.init took 0.05s
-Early init took 0.01s
-Loader init took 0.01s
-Loading error handling took 0.02s
+Bootstrap to the start of init.init took 0.06s
+Early init took 0.02s
+Loader init took 0.04s
+Loading error handling took 0.01s
 Loading script took 0.10s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.01s
+Running init code took 0.14s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Admin\\AppData\\Roaming/RenPy/backups\\oth_rpy':
@@ -22,23 +22,23 @@ DPI scale factor: 1.000000
 Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.03s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
 Save screen analysis took 0.04s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.01s
+Interface start took 0.00s
 
 primary display bounds: (0, 0, 1360, 768)
 Windowed mode.
 Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
 Vendor: 'ATI Technologies Inc.'
 Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.5.14008 Compatibility Profile Context 21.19.160.257'
+Version: '4.5.13474 Compatibility Profile Context 22.19.162.4'
 Display Info: <Info({'blit_sw_CC': False, 'refresh_rate': 60, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 8), 'hw': False, 'masks': (16711680L, 65280L, 255L, 0L), 'current_h': 768, 'current_w': 1360, 'shifts': (16, 8, 0, 0), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
 Fixed-function is blacklisted.
 Extensions:
@@ -117,6 +117,7 @@ Extensions:
     GL_ARB_geometry_shader4
     GL_ARB_get_program_binary
     GL_ARB_get_texture_sub_image
+    GL_ARB_gl_spirv
     GL_ARB_gpu_shader5
     GL_ARB_gpu_shader_fp64
     GL_ARB_half_float_pixel
@@ -338,12 +339,12 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.867000102997s
+Total time until interface ready: 1.17699980736s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.014000 seconds.
-- Frame drawn at 0.030000 seconds.
-- Frame drawn at 0.046000 seconds.
+- Frame drawn at 0.015000 seconds.
+- Frame drawn at 0.031000 seconds.
+- Frame drawn at 0.047000 seconds.
 - Frame drawn at 0.063000 seconds.
 - 0.063000 seconds to render 5 frames.
 Cleaning stores took 0.00s
