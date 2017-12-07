@@ -1,21 +1,20 @@
-Wed Nov 29 22:14:26 2017
+Thu Dec 07 19:42:18 2017
 Windows-8-6.2.9200
 Ren'Py 6.99.12.4.2187
  
 
 Bootstrap to the start of init.init took 0.06s
-Early init took 0.02s
-Loader init took 0.04s
-Loading error handling took 0.01s
-Loading script took 0.10s
+Early init took 0.01s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.06s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.14s
+Running init code took 0.13s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Admin\\AppData\\Roaming/RenPy/backups\\oth_rpy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -23,15 +22,15 @@ Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.00s
+Interface start took 0.01s
 
 primary display bounds: (0, 0, 1360, 768)
 Windowed mode.
@@ -339,14 +338,14 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.17699980736s
+Total time until interface ready: 1.00600004196s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.015000 seconds.
-- Frame drawn at 0.031000 seconds.
+- Frame drawn at 0.030000 seconds.
 - Frame drawn at 0.047000 seconds.
-- Frame drawn at 0.063000 seconds.
-- 0.063000 seconds to render 5 frames.
+- Frame drawn at 0.064000 seconds.
+- 0.064000 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.10s
 Build styles took 0.01s
