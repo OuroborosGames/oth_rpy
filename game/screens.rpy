@@ -82,6 +82,44 @@ style frame:
 ################################################################################
 
 
+screen building_card(building):
+    frame:
+        background Frame("back.jpg")
+        area(0, 0, 1000, 1000)
+        vbox:
+            frame:
+                text (building.name)
+                area (50, 0, 900, 50)
+                background Solid("#000")
+            frame:
+                area(100, 20, 800, 400)
+                background Frame("cowe.jpg")
+            frame:
+                area (100, 40, 800, 200)
+                background None
+                viewport id "vp":
+                    edgescroll(50, 200)
+                    text (building.description)
+            hbox:
+                frame:
+                    area (100, 100, 400, 100)
+                    background None
+                    vbox:
+                        for x in building.additional_effects:
+                            text(x + ": " + str(building.additional_effects[x]))
+                frame:
+                    area (100, 100, 400, 100)
+                    background None
+                    vbox:
+                        for x in building.per_turn_effects:
+                            text(x + ": " + str(building.per_turn_effects[x]))
+            frame:
+                area (100, 150, 800, 200)
+                background None
+                text ("Price: " + str(building.price))
+            
+
+
 ## Say screen ##################################################################
 ##
 ## The say screen is used to display dialogue to the player. It takes two
