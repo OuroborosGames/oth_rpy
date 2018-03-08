@@ -82,42 +82,73 @@ style frame:
 ################################################################################
 
 
+screen show_buildings(buildings):
+    frame:
+        vbox:
+        # area(0,0,2000,2000)
+            viewport id "v":
+                # area(0,0,1000,1000)
+                draggable True
+                # edgescroll(1000,1000)
+                grid len(buildings) 1:
+                    for b in buildings:
+                        use building_card(b)
+            bar value XScrollValue("v")
+        
+
+
+transform jp2gmd:
+    zoom 0.5
+
 screen building_card(building):
     frame:
+        at jp2gmd
         background Frame("back.jpg")
         area(0, 0, 1000, 1000)
         vbox:
-            frame:
-                text (building.name)
-                area (50, 0, 900, 50)
-                background Solid("#000")
-            frame:
-                area(100, 20, 800, 400)
-                background Frame("cowe.jpg")
-            frame:
-                area (100, 40, 800, 200)
-                background None
-                viewport id "vp":
-                    edgescroll(50, 200)
-                    text (building.description)
-            hbox:
-                frame:
-                    area (100, 100, 400, 100)
-                    background None
-                    vbox:
-                        for x in building.additional_effects:
-                            text(x + ": " + str(building.additional_effects[x]))
-                frame:
-                    area (100, 100, 400, 100)
-                    background None
-                    vbox:
-                        for x in building.per_turn_effects:
-                            text(x + ": " + str(building.per_turn_effects[x]))
-            frame:
-                area (100, 150, 800, 200)
-                background None
-                text ("Price: " + str(building.price))
-            
+            use card_upper(building.name, "cowe.jpg")
+            use card_lower(building.description, building.additional_effects,
+                building.per_turn_effects, building.price)
+
+
+screen card_upper(name, imgfile):
+    vbox:
+        frame:
+            text (name)
+            area (50, 0, 900, 50)
+            background Solid("#000")
+        frame:
+            area(100, 20, 800, 400)
+            background Frame(imgfile)
+
+
+screen card_lower(description, additional_effects, per_turn_effects, price):
+    frame:
+        area (100, 40, 800, 200)
+        background None
+        hbox:
+            viewport id description:
+                area( 0, 0, 790, 200)
+                text (description)
+            vbar value YScrollValue(description)
+        
+    hbox:
+        frame:
+            area (100, 100, 400, 100)
+            background None
+            vbox:
+                for x in additional_effects:
+                    text(x + ": " + str(additional_effects[x]))
+        frame:
+            area (100, 100, 400, 100)
+            background None
+            vbox:
+                for x in per_turn_effects:
+                    text(x + ": " + str(per_turn_effects[x]))
+    frame:
+        area (100, 150, 800, 200)
+        background None
+        text ("Price: " + str(building.price))    
 
 
 ## Say screen ##################################################################

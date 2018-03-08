@@ -17,7 +17,6 @@ init python:
     import oth_core
     backend = oth_core.GameBackend()
     building = None
-    x = "dupa"
 
 label start:
 
@@ -31,7 +30,7 @@ label start:
     image cowescale = im.Scale("cowe.jpg", 400, 250)
     image doggoscale = im.Scale("doggo.jpg", 100, 150)
     # image doggowan = Text([building.name])
-    call screen building_card(building) 
+    call screen show_buildings(backend.buildings_deck) 
      
     image cardTemplate = LiveComposite(
         (500, 500),
